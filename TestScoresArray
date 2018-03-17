@@ -1,0 +1,24 @@
+package testscoresarray;
+
+import javax.swing.JOptionPane;
+
+public class TestScoresArray 
+{
+
+    public static void main(String[] args) 
+    {
+        String tatum = "";
+        int [] testScore = new int [5];
+        for (int i = 0; i < testScore.length; i++)
+        {
+            testScore[i] = Integer.parseInt(JOptionPane.showInputDialog("Enter"
+                    + " test score " + (i+1) + ":"));
+        }
+        for(int x = 0; x < testScore.length; x++)
+        {
+            tatum += testScore[x] + "\n";
+        }
+        JOptionPane.showMessageDialog(null, "Test scores: \n" + tatum);
+    }
+    
+}
